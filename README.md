@@ -1,6 +1,8 @@
 # ![GA Logo](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Pyhton Hash Table Challenges
 
-### Lets solve some code challenges! These challenges are designed specifically to have solutions that involve **HASH TABLES**. 
+#### Lets solve some code challenges! These challenges are designed specifically to have solutions that involve 
+
+### **_HASH TABLES_**. 
 
 ![space browns](https://media.giphy.com/media/10GUbOX16lS15C/giphy.gif)
 
