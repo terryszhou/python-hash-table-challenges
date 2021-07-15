@@ -23,9 +23,9 @@ Input: [10]
 Output: 10
 '''  
 
-def find_it(seq):
+def find_it(li: list) -> None:
   hash = {}
-  for number in seq:
+  for number in li:
     if number not in hash: 
       hash[number] = 1 
     else:
