@@ -25,5 +25,25 @@ Input: nums = [3,3], target = 6
 Output: [0,1]
 '''    
 
-def two_sum(nums, target):
-  pass
+# naive solve using nested loops
+# def two_sum(nums: list, target: int) ->list:
+#   for i in range(len(nums)):
+#     for j in range(len(nums)):
+#       if i == j: continue
+#       if nums[i] + nums[j] == target:
+#         return [i, j]
+
+
+# using a hash table
+def two_sum(nums: list, target: int) ->list:
+  hash_table = {}
+  for i in range(len(nums)):
+    difference = target - nums[i]
+    if difference not in hash_table:
+      hash_table[nums[i]] = i
+    else:
+      return [hash_table[difference], i] 
+
+print('it should return [0, 1]', two_sum([2,7,11,15], 9))
+print('it should return [1, 2]', two_sum([3,2,4], 6))
+print('it should return [3, 4]', two_sum([0,1,2,3,3], 6))
