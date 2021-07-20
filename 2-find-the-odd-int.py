@@ -23,5 +23,22 @@ Input: [10]
 Output: 10
 '''    
 
+# MY SOLVE
 def find_it(li):
-  pass
+    hash = {}
+    for num in li:
+        if num in hash: hash[num] += 1
+        else: hash[num] = 1
+
+    for i in hash:
+        if hash[i] % 2 != 0:
+            return i
+
+# # BEST SOLVE
+# def find_it(li):
+#     for num in li:
+#         if li.count(num)%2!=0:
+#             return num
+
+
+print(find_it([20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5]))
